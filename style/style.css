@@ -1,3 +1,14 @@
-h1{
-    background-color: blue;
+.all-In-One{
+    text-align: center;
+    background-color: #2e0300;
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    background-size: cover;
+}
+
+.topQ h1{
+    background-color: beige;
+}
+
+.theList{
+    background-color: burlywood;
 }
