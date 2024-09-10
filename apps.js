@@ -1,18 +1,51 @@
 //NAMING VARIABLES
-//let toAddList = []; //Empty array to add to 
+//let toAddList = []; //Empty array to add to //WARNING. MAY NOT NEED.
 let addButton = document.getElementById("AddTaskButton"); //Add Task button now linked
 let addText = document.getElementById("toDoText"); //connects input box
+//let addCheck = document.getElementById("toDoCheck"); //connects check box
 let addToUl = document.getElementById("ulID") //connects my UL 
+let liItem = document.getElementById("liID") //connects my li
+
 
 //addButton when clicked now...
     addButton.addEventListener("click", () => 
-    {
+    {   
+        /*
         console.log(addText.value)//when clicked button logs input text into console. 
-        addToUl.append(addText.value) //when button clicked adds text to scren 
+        let realAdding = addToUl.append(addText.value) //when button clicked adds text to screen (any new text goes next to it tho)
+        toAddList.push(realAdding) //logs text into console. But all of it
+        //ABOVE WORKS. MOSTLY.
+        */
+//sdxfcgvhbjnkml,;vcxzsxcfvhbjnkml,;'.jhgf,mknjbhvgf
+        //mike suggestion put all added items inot an li 
+       liItem.append(checkbox)
+       liItem.append(addItem)
 
-    }) 
+        //ADD CHECK BOX 
+        let checkBox = document.createElement("input")
+        checkBox.type = "checkbox"
+       // checkBox.innerHTML = addToUl.append(addText)
+        addToUl.append(liItem) //add items to li 
 
-//
+        //ADD P TAG TO TEXT BOX
+        let addItem = document.createElement("p") //created p tag for inputed text
+        addItem.innerHTML = addToUl.append(addText.value) //logged text to HTML / to the screen 
+      
+        //add checkbox
+        //let checkBox = document.querySelector("#toDoCheck")
+        
+        /*
+        //doesn't need to be here. May be added to remove later
+        if(checkBox.checked == true){
+            console.log("did it work?")
+            addItem.style.setProperty("text-decoration" , "line-through")
+            
+        } else {
+            console.log("bye")
+        }
+        */
+    }) //end of event listener 
+
 /*
 function addingTasks (addNew)
 {
